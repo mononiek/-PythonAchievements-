@@ -9,7 +9,7 @@
 
 import time
 
-aftellen = 100
+aftellen = 1000
 while aftellen > -1:
 	print(aftellen)
 	if aftellen == 0:
