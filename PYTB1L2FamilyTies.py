@@ -19,22 +19,22 @@
 #Dit is het begin.
 
 Voornaam = " Monique,"
-Leeftijd = " 19 jaar oud."
+Leeftijd = 19
 Woonplaats01 = "Almere."
 Woonplaats02 = "Amsterdam."
-AfstandSchool01 = " 46.4"
-AfstandSchool02 = " 12.2"
+AfstandSchool01 = 46.4
+AfstandSchool02 = 12.2
 School = "van het Mediacollege vandaan."
 Diplomas = " Ik 14 zwem diploma's heb."
-
+Huisdier = True
 
 print("Hallo! Mijn naam is" + Voornaam)
-print("en ik ben" + Leeftijd)
+print("en ik ben" + str(Leeftijd))
 print("Ik woon het meeste bij mijn vader in " + Woonplaats01)
-print("dat is ongeveer" + AfstandSchool01 + " km " + School)
-print("Ook woon ik veel bij mijn moeder in " + AfstandSchool02)
-print("dat is ongeveer" + AfstandSchool02 + " km " + School)
+print("dat is ongeveer" + str(AfstandSchool01) + " km " + School)
+print("Ook woon ik veel bij mijn moeder in " + Woonplaats02)
+print("dat is ongeveer" + str(AfstandSchool02) + " km " + School)
 print("Een leuk feitje over mij is dat," + Diplomas)
-
+print("Heb ik een huisdier?" + str(Huisdier))
 
 
