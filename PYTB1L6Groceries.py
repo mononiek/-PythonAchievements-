@@ -19,7 +19,7 @@ print("Ohw HI!\n I'm going to do groceries right now\n And this is my grocery li
 
 time.sleep(1)
 
-Grocerylist = {"pasta", "chocolate", "Brocoli", "chicken", "cookies"}
+Grocerylist = ["pasta", "chocolate", "Brocoli", "chicken", "cookies"]
 print(Grocerylist)
 
 time.sleep(1)
@@ -28,17 +28,28 @@ print("I'm only in a bit of a hurry so I'm gonna get started and try to find eve
 
 time.sleep(1)
 
-Shoppingcart = {"pasta", "chocolate", "Brocoli", "chicken", "cookies"}
+Shoppingcart = ["chocolate", "Brocoli", "chicken", "cookies"]
 
 
-lenghtGrocerylist = 0
+#lenghtGrocerylist = 0
 
-for product in Grocerylist:
-    lenghtGrocerylist += 1
-    print("Continue Shopping")
+founditems = 0
 
+for x in Shoppingcart:
+    if x in Grocerylist:
+        founditems += 1
 
-if (lenghtGrocerylist == 5):
+if founditems == len(Grocerylist):
     print("Done shopping")
-    print("Ok. I'm done shopping now. \nSee you next time!")
-        
+else:
+    print("Continue shopping")
+
+##for product in Grocerylist:
+##    lenghtGrocerylist += 1
+##    print("Continue Shopping")
+##    time.sleep(0.5)
+##
+##if (lenghtGrocerylist == 5):
+##    print("Done shopping")
+##    print("Ok. I'm done shopping now. \nSee you next time!")
+##        

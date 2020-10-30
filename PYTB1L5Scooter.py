@@ -22,8 +22,7 @@
 
 import time
 
-def bereken_maandkosten():
-    km_per_maand = float(input("Schrijf hier alleen in cijfers hoeveel km je deze maand hebt gereden\n"))
+def bereken_maandkosten(km_per_maand):
     liter_per_kilometer = 0.2
     benzine_kosten_per_liter = 1.54
     verzekering_per_maand = 23
@@ -34,6 +33,11 @@ print("Hoi! Ik ben hier om je te helpen met het uitreken hoeveel je per maand kw
 
 time.sleep(2)
 
-bereken_maandkosten()
+km_per_maand = float(input("Schrijf hier alleen in cijfers hoeveel km je deze maand hebt gereden\n"))
+
+bereken_maandkosten(km_per_maand)
 
 print("Het bedrach dat je hierboven ziet is hoeveel euro je kwijt bent aan je scooter.\n Let wel goed op dat de . in dit bedrag voor een komma staat, je bent dus niet zoveel duizende euro's kwijt!")
+
+bereken_maandkosten(50)
+
